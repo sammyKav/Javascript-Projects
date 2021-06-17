@@ -1,4 +1,4 @@
-function mathfun(){
+function mathfun(){ //subtraction
 
   var M =  5-2;
 document.getElementById("Math").innerHTML="5-2=" + M;
@@ -6,7 +6,7 @@ document.getElementById("Math").innerHTML="5-2=" + M;
 }
 
 
-function timesfun(){
+function timesfun(){ //multiplication
 
     var times =  5*2;
     var dv = 10/5;
@@ -14,7 +14,7 @@ function timesfun(){
   
   }
 
- function more_Math() {
+ function more_Math() {//expression
 
     var math = (1+2)*10/2-5;
     document.getElementById("P").innerHTML="not writing that all out =" + math;
@@ -36,7 +36,7 @@ function timesfun(){
 
   }
 
-  function inc() {
+  function inc() {//increment
 
     var L = 1000;
     L++;
@@ -47,9 +47,15 @@ function timesfun(){
 
   }
 
-  window.alert(Math.random()*100)
-
-  function euler(){
+  
+  function euler(){ //math function
     var Ee = Math.E;
     document.getElementById("e").innerHTML= " Euler's # aka e is equal to the limit as n approaches infinity (1+1/n)^n =" + Ee;
   }
+
+function randy() { //random # function.
+
+    var ran =Math.random();
+    
+    document.getElementById("rando").innerHTML="the is a random #" + ran;
+}
