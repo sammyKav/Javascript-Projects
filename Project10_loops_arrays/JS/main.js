@@ -1,14 +1,15 @@
 
 
 
-function Call_Loop() {//while loop.
+function Call_Loop() {//while loop. when the length fo the Word string variable gets to 20 exit loop. 
+
 
     var X = 1;
-    var Digit = "";
+    var Digit = "";         
     var Word =" Blah"
     var strLen =Word.length;
     while(strLen<20) {
-        Digit +="<br>"+X + Word + strLen;
+        Digit +="<br>"+X + Word + strLen;    
         X++;
         Word+="h";
         strLen = Word.length;//str length.
@@ -16,21 +17,21 @@ function Call_Loop() {//while loop.
     document.getElementById("Loop").innerHTML=Digit;
 }
 
-var Instruments= ["Guitar","Drums","Piano","Flute","Bass","Violin","Trumpet","Flute"];
-var Content="";
-var Y;
-function for_Loop() {
+var Instruments= ["Guitar","Drums","Piano","Flute","Bass","Violin","Trumpet","Flute"];//create array. 
+var Content="";//create a blank variable to add a values to once the for loop is executed. 
+var Y; //creates global variable t otbe used in the loop. 
+function for_Loop() {//for loop will have iterations for each element in the array. 
 
-    for(Y=0;Y<Instruments.length;Y++) {
+    for(Y=0;Y<Instruments.length;Y++) {     
 
         Content += Instruments[Y]+"<br>";      
     }
     document.getElementById("List_of_Instruments").innerHTML=Content;
 }
 
-function array_Function()    {
+function array_Function()    {//array
 
-    var array_item=[];
+    var array_item=[];//adds an element to the array at each specified position. 
     array_item[0]="Red";
     array_item[1]="Blue";
     array_item[2]="Green";
@@ -41,8 +42,8 @@ function array_Function()    {
 
 function constant_function() {
 
-    
-    const Frogs = {frog_type:"tree frog",poisonous:"Yes, deadly",color:"multi-bright"};
+    //creates and edits a constant
+    const Frogs = {frog_type:"tree frog",poisonous:"Yes, deadly",color:"multi-bright"}; 
     Frogs.poisonous="only on Thursdays"
     document.getElementById("Constant").innerHTML=Frogs.poisonous+" "+Frogs.color;
 
@@ -50,14 +51,14 @@ function constant_function() {
 
 
 
-let car = {
+let car = {//usiing a method
     make:"Dodge",
     model:"Viper",
     year:"2021",
     color:"red",
 
 
-description: function(){
+description: function(){//storing a functino as a property for an object. 
 
     return "The car is a "+this.year + " "+ this.color+" "+ this.make+" "+this.model;
     }
@@ -66,7 +67,7 @@ description: function(){
 document.getElementById("Car_Object").innerHTML=car.description();
 
 
-function BreakitUp(){
+function BreakitUp(){//break  exit loop when n= 5. 
     var n= 0;
     var P=""
     var S=" Don't make me repeat myself! ";
@@ -86,7 +87,7 @@ function BreakitUp(){
     document.getElementById("break").innerHTML=P;
 }
 
-var zz=5;//let
+var zz=5;//let - allows you to change the value of a global variable inside brackets. 
 document.getElementById("zz").innerHTML=zz;
 
 function zz_fun(){
