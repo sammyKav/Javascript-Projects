@@ -23,7 +23,7 @@ function Input_Digit(digit) {
     } else {
         //this overwrites Display Value if the current value is 0
         //otherwise it adds onto it
-        Calculator.Display_Value=Display_Value==='0'?digit:Display_Value + digit;
+        Calculator.Display_Value=Display_Value==='0' ? digit:Display_Value + digit;
     }
 }
 //this section handles decimal points
@@ -90,24 +90,24 @@ function Calculator_Reset(){
 
 function Update_Display() { 
 
-    const display = document.querySelector('.calcuator-screen');
+    const display = document.querySelector('.calculator-screen');
     display.value = Calculator.Display_Value;
 }
 
 Update_Display();
 //this section monitors button clicks
-    const keys = document.querySelector('calculator-keys');
+    const keys = document.querySelector('.calculator-keys');
     keys.addEventListener('click',(event)=>{
 //the target variable is an object that represents the element
 //taht was clicked
-    const {target}=event;
+    const { target }=event;
     //if the element was clicked on is not a button,exit the function
     if(!target.matches('button')){
         return;
     }
     if(target.classList.contains('operator')){
         Handle_Operator(target.value);
-        Update_Diplay();
+        Update_Display();
         return;
     }
     if(target.classList.contains('decimal')){
