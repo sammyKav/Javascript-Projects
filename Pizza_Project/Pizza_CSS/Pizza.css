@@ -1,0 +1,109 @@
+
+
+#menuBG {
+    width:800px;
+    height:470px;
+    margin:10px auto;
+}
+
+#frmMenu {
+
+    width:800px;
+    height:200px;
+}
+
+#totalPrice {
+
+    
+    width:200px;
+    height:190px;
+    margin:0 auto;
+    float:right;
+    
+}
+
+.left {
+    border:black solid;
+    padding:30px;
+    width:200px;
+    height:200px;
+    float:left;
+    margin-right: 10px;
+    background-color:blanchedalmond;
+    margin-top:100px;
+   
+}
+
+.center {
+
+    border:black solid;
+    padding:30px;
+    width:200px;
+    height:190px;
+    margin:0px auto;
+    float:left;
+    background-color:blanchedalmond;
+
+}
+
+.right {
+    border:black solid;
+    padding:30px;
+    width:200px;
+    height:190px;
+    margin:0px auto;
+    float:left;
+    margin-top:20px;
+    background-color:blanchedalmond;
+    
+}
+
+#showText {
+
+    width:200px;
+    height:190px;
+    margin:0px auto;
+    float:left;
+}
+
+#cart   {
+
+    top:0;margin:0px auto;
+    width:400px;
+    height:200px;
+}
+
+#btnOrder {
+    margin:10px 0px 0px 100px;
+    width: 100px;
+    height:40px;
+    font-weight:700;
+    background-color:rgb(190, 190, 190);
+}
+
+body {
+
+    background-color: rgb(129, 191, 199);
+}
+
+h1 {
+
+    font-family:fantasy;
+    color:red;
+    text-align:justify;
+    text-shadow:.2em .1em black;
+    
+}
+
+h3 {
+    font-family:'Times New Roman', Times, serif;
+    color:rgba(12, 12, 240, 0.856);
+    
+}
+
+div{
+
+    font-family: fantasy;
+
+}
+

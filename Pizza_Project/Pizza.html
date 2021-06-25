@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang ='en'>
+    <head>
+        <title>Pizza Drill Demo</title>
+        <META http-equiv="Content-Type" CONTENT ="text/html"; charset ="UTF-8">
+        <meta content ="width=device-width, initial-scale=1.0" name="viewpoint">
+        <script src ="Pizza_Javascript/Pizza.js" defer></script>
+        <link rel="stylesheet" type = "text/css" href="Pizza_CSS/Pizza.css">
+    </head>
+
+    <body>
+        <div id = "menuBG">
+            <h1 style ="margin:0 0 px 0 20px;">Psycho Killer Ralph's Pizza </h1>
+            <input id="btnOrder" type = "button" onclick ="getReceipt()"
+                value="Place Order">
+            <form id="frmMenu">
+                <div class="menu left">
+                    <h3>Size: </h3>
+                    <input class ="size" type="radio" name="Size"
+                        value="Personal Pizza">Personnel Pizza<br>
+                    <input class = "size" type = "radio" name ="Size"
+                        value="Medium Pizza">Medium Pizza<br>
+                    <input class="size" type="radio" name = "Size"
+                        value="Large Pizza" checked>Large Pizza<br>
+                    <input class ="size" type = "radio" name ="Size"
+                        value="Extra Large Pizza">Extra Large Pizza<br>  
+                    <input class ="size" type = "radio" name ="Size"
+                        value="Psycho Large Pizza">Psycho Large Pizza<br>     
+                </div>
+
+                <div class = "menu center">
+                    <h3>Veggies:</h3>
+                    <input class="topping" type ="checkbox" name="Topping"
+                        value="Onion">Onion<br>
+                    <input class="topping" type="checkbox" name="Topping"
+                        value="Pepper">Peppers <br>
+                    <input class="topping" type ="checkbox" name="Topping"
+                        value="Garlic">Garlic<br>
+                    <input class="topping" type ="checkbox" name="Topping"
+                        value="Shrooms">Magic Mushrooms<br>   
+                </div>
+
+
+
+
+
+                <div class = "menu right">
+                    <h3>Plant Based Meats:</h3>
+                    <input class="topping" type ="checkbox" name="Topping"
+                        value="Pepperoni">Pea Protein Pepperoni<br>
+                    <input class="topping" type="checkbox" name="Topping"
+                        value="Sausage">Soy Sausage <br>
+                    <input class="topping" type ="checkbox" name="Topping"
+                        value="Bacon">Tempeh Bacon<br>
+                    <input class="topping" type ="checkbox" name="Topping"
+                        value="Ground Beef">Beyond Meat Beef<br>
+                    <input class="topping" type ="checkbox" name="Topping"
+                        value="Anchovy">Anchovy<br>
+                    <input class="topping" type ="checkbox" name="Topping"
+                        value="Chicken">Tofu-Chicken<br>
+                    <input class="topping" type ="checkbox" name="Topping"
+                        value="Crab">Crab<br>    
+                </div>
+                <div id="cart">
+                    <div id="showText"></div>
+                    <div id="totalPrice"></div>
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>
